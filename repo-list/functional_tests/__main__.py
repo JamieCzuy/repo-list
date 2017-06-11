@@ -17,7 +17,7 @@ def _get_test_file_patterns():
                 arg = '*' + arg + '*'
             cmd_line_patterns.append(arg)
     if not cmd_line_patterns:
-        return ['test*.py', '*tests.py']
+        return ['tc*.py', 'test*.py']
     else:
         return cmd_line_patterns
 
