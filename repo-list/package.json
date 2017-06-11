@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "fun-tests": "python functional_tests",
+    "eject - DON'T USE": "react-scripts eject"
   }
 }
