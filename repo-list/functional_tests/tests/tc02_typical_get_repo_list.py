@@ -14,14 +14,14 @@ class TestCase(FunctionalTestCase):
         self.browser.wait_until(EC.title_contains('Repo-List'))
 
         # and sees a Welcome message and a place to enter the github username
-        text = 'Welcome'
+        text = 'Welcome to Repo-List'
         self.browser.wait_until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, 'body'), text))
-        elt = self.browser.find_element_by_id('input_username')
-        elt.send_keys('kennethreitz')
+        elt = self.browser.find_element_by_id('username_input')
 
         # She enters "kennethreitz" and clicks the List Button
-        ## Enter name
-        ## Click button
+        elt.send_keys('kennethreitz')
+        button = self.browser.find_element_by_id('submit_button')
+        button.click()
 
         # And she sees a list of his githib repos (including requests)
         ## List exists

@@ -1,0 +1,31 @@
+.UserName {
+  text-align: center;
+}
+
+#username_input {
+  width: 300px;
+}
+
+.UserName-header {
+  background-color: blue;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.UserName-body {
+  background-color: blue;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.UserName-error {
+  background-color: red;
+  display: none;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+
