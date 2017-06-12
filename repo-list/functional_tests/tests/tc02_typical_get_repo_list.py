@@ -21,7 +21,9 @@ class TestCase(FunctionalTestCase):
         # She enters "kennethreitz"
         elt.send_keys('kennethreitz')
 
-        # And she sees a list of his githib repos (including requests)
+        # And she sees a list of his githib repos (including clint and elephant)
         elt = self.browser.find_element_by_id('repo_list')
-        text = 'requests'
+        text = 'clint'
+        self.browser.wait_until(EC.text_to_be_present_in_element((By.ID, 'repo_list'), text))
+        text = 'elephant'
         self.browser.wait_until(EC.text_to_be_present_in_element((By.ID, 'repo_list'), text))
