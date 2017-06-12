@@ -1,26 +1,26 @@
-.UserName {
+.RepoList {
   text-align: center;
 }
 
-#username_input {
+#RepoList_input {
   width: 300px;
 }
 
-.UserName-header {
-  background-color: blue;
-  height: 75px;
+.RepoList-header {
+  background-color: darkblue;
+  height: 100px;
   padding: 20px;
   color: white;
 }
 
-.UserName-body {
-  background-color: blue;
-  height: 50px;
+.RepoList-body {
+  background-color: darkblue;
+  height: 100px;
   padding: 20px;
   color: white;
 }
 
-.UserName-error {
+.RepoList-error {
   background-color: red;
   display: none;
   height: 100px;
