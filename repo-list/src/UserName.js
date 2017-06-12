@@ -17,8 +17,8 @@ class UserName extends Component {
       <div className="UserName">
         <div className="UserName-header">
           <h2>Welcome to Repo-List</h2>
-          Enter the github username you'd like to the list
-          of repo for:
+          Enter the github username you would like to the list
+          of repos for:
         </div>
         <div className="UserName-body">
           <form>
