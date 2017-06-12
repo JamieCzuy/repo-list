@@ -24,9 +24,6 @@ class UserName extends Component {
           <form>
             <div>
               <input id="username_input" type="text" onChange={this.handleChange} />
-            </div><div>
-              <input id="submit_button" type="submit" 
-                     value="List Repos" onChange={this.handleChange} />
             </div>
           </form>
         </div>

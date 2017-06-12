@@ -12,12 +12,10 @@ class App extends Component {
   }
 
   callbackToSetUsername = (valueFromUser) => {
-    console.log("Setting username: " + valueFromUser)
     this.setState({ username: valueFromUser });
   }
 
   render() {
-    console.log("App Render")
     return (
       <div className="App">
         <div className="App-header">
