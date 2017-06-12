@@ -8,15 +8,16 @@
 
 .RepoList-header {
   background-color: darkblue;
-  height: 100px;
+  height: 50px;
   padding: 20px;
   color: white;
 }
 
 .RepoList-body {
   background-color: darkblue;
-  height: 100px;
+  height: 200px;
   padding: 20px;
+  text-align: left;
   color: white;
 }
 

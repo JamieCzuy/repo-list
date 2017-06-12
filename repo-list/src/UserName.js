@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import './UserName.css';
 
 class UserName extends Component {
+
+  constructor(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.props.setUsername(event.target.value);
+  }
+
   render() {
     return (
       <div className="UserName">
@@ -13,9 +23,10 @@ class UserName extends Component {
         <div className="UserName-body">
           <form>
             <div>
-              <input id="username_input" type="text"/>
+              <input id="username_input" type="text" onChange={this.handleChange} />
             </div><div>
-              <input id="submit_button" type="submit" value="List Repos"/>
+              <input id="submit_button" type="submit" 
+                     value="List Repos" onChange={this.handleChange} />
             </div>
           </form>
         </div>

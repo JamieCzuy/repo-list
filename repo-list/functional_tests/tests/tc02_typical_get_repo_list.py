@@ -24,7 +24,8 @@ class TestCase(FunctionalTestCase):
         button.click()
 
         # And she sees a list of his githib repos (including requests)
-        ## List exists
-        ## "requests" repo is in the list
+        elt = self.browser.find_element_by_id('repo_list')
+        text = 'requests'
+        self.browser.wait_until(EC.text_to_be_present_in_element((By.ID, 'repo_list'), text))
 
         self.fail('TBD')
