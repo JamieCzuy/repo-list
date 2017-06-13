@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ErrorComponent from './ErrorComponent';
+import ErrorDiv from './ErrorDiv';
 import './RepoList.css';
 
 class RepoList extends Component {
@@ -46,7 +46,7 @@ class RepoList extends Component {
         <div className="RepoList-header">
           <h2>List of Repos for: {`${this.props.username}`}</h2>
         </div>
-        <ErrorComponent error={showErr}/>
+        <ErrorDiv error={showErr}/>
         <div className="RepoList-body">
           <ul id="repo_list">
             {this.state.repos.map(repo =>
