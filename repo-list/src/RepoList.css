@@ -20,13 +20,3 @@
   text-align: left;
   color: white;
 }
-
-.RepoList-error {
-  background-color: red;
-  display: none;
-  height: 100px;
-  padding: 20px;
-  color: white;
-}
-
-
