@@ -1,6 +1,10 @@
-__pycache__/
-build/
-ghostdriver.log
-node_modules/
-npm-debug.log
+.DS_Store
 .idea/
+
+__pycache__/
+
+build/
+node_modules/
+
+ghostdriver.log
+npm-debug.log
